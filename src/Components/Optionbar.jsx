@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Newscard from '../Cards/Newscard';
 const Optionbar = () => {
-    const [value, setVal] = useState('Home');
+    const [value, setVal] = useState('home');
     const [news, setNews] = useState([]);
     const getTheValue = (val) => {
         console.log(val)

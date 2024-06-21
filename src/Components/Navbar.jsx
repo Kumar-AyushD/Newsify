@@ -28,7 +28,7 @@ const Navbar = () => {
       }
       const data = await res.json();
       setNews(data.articles);
-      setInputValue(""); // Clear the input field after fetching news
+      setInputValue("");
     } catch (error) {
       console.error("Error fetching news:", error);
     }
@@ -36,7 +36,7 @@ const Navbar = () => {
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      setVal(inputValue); // Update the value state when Enter is pressed
+      setVal(inputValue); 
       getNews(inputValue);
     }
   };
